@@ -1,0 +1,238 @@
+@import url(./reset.css);
+
+/* FONTS */
+@font-face {
+  font-family: "MortalCombatFont";
+  src: url(./fonts/MortalKombat.ttf);
+}
+
+@font-face {
+  font-family: "SteelFont";
+  src: url(./fonts/SteelFont.TTF);
+}
+
+.mortal-font {
+  font-family: "MortalCombatFont";
+}
+
+.steel-font {
+  font-family: "SteelFont";
+  font-weight: bold;
+}
+
+.h1 {
+  font-size: 3rem;
+}
+
+.h2 {
+  font-size: 2rem;
+}
+
+.h3 {
+  font-size: 1rem;
+}
+
+.fs-10 {
+  font-size: 20rem;
+}
+
+.text-shadow-first {
+  text-shadow: 8px 8px 2px rgba(0, 0, 0, 1);
+}
+
+.text-shadow-second {
+  text-shadow: 5px 5px 2px rgba(0, 0, 0, 1);
+}
+
+.text-black {
+  color: black !important;
+}
+
+/* BORDERS */
+
+.border-grey {
+  border: 5px groove #8c8c8c;
+}
+
+.border-green {
+  border: 5px groove #59ff00;
+}
+
+.border-red {
+  border: 5px groove #ff0000;
+}
+
+
+/* SPACING */
+.mb-1 {
+    margin-bottom: 1rem;
+}
+
+/* PSEUDO CLASSES */
+:focus {
+  outline: .5rem solid green;
+  border: none;
+  height: 10rem;
+  width: 8rem;
+  position: absolute;
+}
+
+:focus::before {
+  content: '1';
+  height: 10rem;
+  width: 8rem;
+  position: absolute;
+  color: #59ff00;
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* HOME STYLES */
+
+body {
+  box-sizing: border-box;
+  font-size: 10px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.wrapper {
+  height: 100vh;
+}
+
+.charachters-bg {
+  background: url("./icons/bg.jpg") no-repeat center center;
+  background-size: cover;
+}
+
+.charachters__page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  font-style: italic;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 8px;
+}
+
+.charachters__container {
+  padding: 0 23rem;
+  position: relative;
+}
+
+.player {
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+}
+
+.player img {
+  height: 25rem;
+}
+
+.charachters__player-pos-left {
+  left: 10%;
+}
+.charachters__player-pos-right {
+  left: 70%;
+}
+
+.charachters__box {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+
+.choose {
+  height: 10rem;
+  width: 8rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.charachters__item img {
+  height: 10rem;
+  width: 8rem;
+}
+
+
+/* END HOME STYLES */
+
+/* START VERSUS STYLES */
+
+.versus-bg {
+  background-size: cover;
+  background: url("./icons/vs-bg.jpg") no-repeat center center;
+}
+
+.versus__page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.versus__logo img {
+  height: 15rem;
+}
+
+.versus__player {
+  position: absolute;
+  bottom: 0;
+}
+
+.versus__player img {
+  height: 45rem;
+}
+
+.versus__player-pos-right {
+  right: 0;
+}
+.versus__player-pos-left {
+  left: 0;
+}
+
+.versus__list {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 3rem;
+  z-index: 2;
+}
+
+
+.versus__item img {
+  height: 50px;
+  width: 70px;
+}
+
+.versus__item-img {}
+
+/* FIGHT PAGE */
+
+
+.fight-page {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
